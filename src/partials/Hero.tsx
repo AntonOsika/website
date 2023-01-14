@@ -1,67 +1,36 @@
-import {
-  GradientText,
-  HeroAvatar,
-  HeroSocial,
-  Section,
-} from 'astro-boilerplate-components';
+import { GradientText } from '@/components/GradientText';
+import { Section } from '@/components/Section';
+
+import { HeroAboutMe } from './HeroAvatar';
 
 const Hero = () => (
   <Section>
-    <HeroAvatar
+    <HeroAboutMe
       title={
         <>
-          Hi there, I'm <GradientText>Ixartz</GradientText> 👋
+          Hi there, I'm <GradientText>Anton</GradientText> 👋
         </>
       }
       description={
         <>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus{' '}
-          <a className="text-cyan-400 hover:underline" href="/">
-            malesuada
-          </a>{' '}
-          nisi tellus, non imperdiet nisi tempor at. Lorem ipsum dolor sit amet,{' '}
-          <a className="text-cyan-400 hover:underline" href="/">
-            consectetur
-          </a>{' '}
-          adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+          I'm passionate about humanity's future, and what we can do to make it
+          amazing. Me and Oliver founded Depict.ai (YC S20), currently 35
+          people, that is on a mission to help people find the product and
+          brands they love; by democratizing access to next level product
+          discovery experiences. I'm an aspiring effective altruist. This
+          website is about incrementally improving my own world model, and
+          trying to help others do the same.
         </>
       }
-      avatar={
-        <img
-          className="h-80 w-64"
-          src="/assets/images/avatar.svg"
-          alt="Avatar image"
-          loading="lazy"
-        />
-      }
-      socialButtons={
-        <>
-          <a href="/">
-            <HeroSocial
-              src="/assets/images/twitter-icon.png"
-              alt="Twitter icon"
-            />
-          </a>
-          <a href="/">
-            <HeroSocial
-              src="/assets/images/facebook-icon.png"
-              alt="Facebook icon"
-            />
-          </a>
-          <a href="/">
-            <HeroSocial
-              src="/assets/images/linkedin-icon.png"
-              alt="Linkedin icon"
-            />
-          </a>
-          <a href="/">
-            <HeroSocial
-              src="/assets/images/youtube-icon.png"
-              alt="Youtube icon"
-            />
-          </a>
-        </>
-      }
+      // avatar={
+      //   <img
+      //     className="h-80 w-64"
+      //     src="/assets/images/avatar.svg"
+      //     alt="Avatar image"
+      //     loading="lazy"
+      //   />
+      // }
+      socialButtons={''}
     />
   </Section>
 );

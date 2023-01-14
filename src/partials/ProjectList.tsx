@@ -1,10 +1,6 @@
-import {
-  ColorTags,
-  GradientText,
-  Project,
-  Section,
-  Tags,
-} from 'astro-boilerplate-components';
+import { GradientText } from '@/components/GradientText';
+import { Project } from '@/components/Project';
+import { Section } from '@/components/Section';
 
 const ProjectList = () => (
   <Section
@@ -16,25 +12,23 @@ const ProjectList = () => (
   >
     <div className="flex flex-col gap-6">
       <Project
-        name="Project 1"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-        bibendum. Nunc non posuere consectetur, justo erat semper enim, non
-        hendrerit dui odio id enim."
-        link="/"
+        name="2023 New Year Predictions"
+        description="Each year me and my friends predict the future one year ahead, anyone is welcome to join"
+        link="/projects/first-project"
         img={{
-          src: '/assets/images/project-web-design.png',
-          alt: 'Project Web Design',
+          src: '/assets/images/project-fire.png',
+          alt: 'fire',
         }}
         category={
           <>
-            <Tags color={ColorTags.FUCHSIA}>Astro.js</Tags>
-            <Tags color={ColorTags.LIME}>Web design</Tags>
+            {/* <Tags color={ColorTags.FUCHSIA}>Predictions</Tags> */}
+            {/* <Tags color={ColorTags.LIME}>Web design</Tags>
             <Tags color={ColorTags.SKY}>Tailwind.css</Tags>
-            <Tags color={ColorTags.ROSE}>TypeScript</Tags>
+            <Tags color={ColorTags.ROSE}>TypeScript</Tags> */}
           </>
         }
       />
-      <Project
+      {/* <Project
         name="Project 2"
         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
         bibendum. Nunc non posuere consectetur, justo erat semper enim, non
@@ -63,7 +57,7 @@ const ProjectList = () => (
             <Tags color={ColorTags.ROSE}>TypeScript</Tags>
           </>
         }
-      />
+      /> */}
     </div>
   </Section>
 );

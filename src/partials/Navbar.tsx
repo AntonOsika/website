@@ -1,10 +1,8 @@
-import {
-  Logo,
-  NavbarTwoColumns,
-  NavMenu,
-  NavMenuItem,
-  Section,
-} from 'astro-boilerplate-components';
+import { Logo } from '@/components/Logo';
+import { NavbarTwoColumns } from '@/components/NavbarTwoColumns';
+import { NavMenu } from '@/components/NavMenu';
+import { NavMenuItem } from '@/components/NavMenuItem';
+import { Section } from '@/components/Section';
 
 const Navbar = () => (
   <Section>
@@ -28,14 +26,17 @@ const Navbar = () => (
               <path d="M4 20h14"></path>
             </svg>
           }
-          name="Ixartz's Blog"
+          name="World model increments"
         />
       </a>
 
       <NavMenu>
-        <NavMenuItem href="/posts">Blogs</NavMenuItem>
-        <NavMenuItem href="/">GitHub</NavMenuItem>
-        <NavMenuItem href="/">Twitter</NavMenuItem>
+        <NavMenuItem href="/posts">Blog</NavMenuItem>
+        <NavMenuItem href="https://github.com/antonosika">GitHub</NavMenuItem>
+        <NavMenuItem href="https://twitter.com/antonosika">Twitter</NavMenuItem>
+        <NavMenuItem href="https://www.linkedin.com/in/antonosika/">
+          Linkedin
+        </NavMenuItem>
       </NavMenu>
     </NavbarTwoColumns>
   </Section>
